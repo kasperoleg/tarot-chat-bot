@@ -11,7 +11,7 @@ app = Flask(__name__)
 CORS(app, origins=["*"])
 
 # Ключ и эндпоинт
-MISTRAL_API_KEY = os.environ.get('MISTRAL_API_KEY')
+MISTRAL_API_KEY = "JXmn9GkEAV5HHhHjH62ok2iYxQqHnXPK"
 MISTRAL_ENDPOINT = "https://api.mistral.ai/v1/chat/completions"
 start_time = time.time()
 request_count = 0
@@ -112,3 +112,4 @@ def tarot_chat():
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 8080))
     app.run(host='0.0.0.0', port=port, debug=False)
+
